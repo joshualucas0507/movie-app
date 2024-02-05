@@ -1,0 +1,31 @@
+/*
+ * File: index.css
+ * Project: my-first-app
+ * File Created: Thursday, 7th May 2020 9:48:43 pm
+ * Author: Joshu Lucas
+ * -----
+ * Last Modified: Sunday, 10th May 2020 5:23:58 pm
+ * Modified By: Joshu Lucas<adi.sreyaj@gmail.com>
+ * -----
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width: 599px) {
+  html {
+    font-size: 14px;
+  }
+}

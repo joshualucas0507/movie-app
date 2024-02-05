@@ -1,0 +1,19 @@
+/*
+ * File: Login.module.css
+ * Project: JL Movie
+ * File Created: Monday, 18th May 2020 11:07:36 pm
+ * Author: Joshu Lucas
+ * -----
+ * Last Modified: Monday, 18th May 2020 11:18:30 pm
+ * Modified By: Joshu Lucas<adi.sreyaj@gmail.com>
+ * -----
+ */
+
+.login {
+  width: 100vw;
+  height: 100vh;
+}
+
+.login__aside {
+  background-image: url('https://www.joblo.com/assets/images/joblo/posters/2019/09/Joker-IMAX-poster-913.jpg');
+}

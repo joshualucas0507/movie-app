@@ -1,0 +1,39 @@
+/*
+ * File: Backdrop.module.css
+ * Project: JL Movie
+ * File Created: Friday, 15th May 2020 11:30:54 pm
+ * Author: Joshu Lucas
+ * -----
+ * Last Modified: Thursday, 21st May 2020 9:13:33 pm
+ * Modified By: Joshu Lucas<adi.sreyaj@gmail.com>
+ * -----
+ */
+
+.backdrop {
+  position: fixed;
+  top: -80px;
+  opacity: 0;
+  width: 100%;
+  z-index: 3;
+  visibility: hidden;
+  height: calc(100% + 80px);
+  transition: all ease-in 0.3s;
+  background-color: #000000cc;
+}
+
+.backdrop.active {
+  animation: backdropAnimation 0.3s ease-in forwards;
+}
+
+@keyframes backdropAnimation {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}

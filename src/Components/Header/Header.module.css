@@ -1,0 +1,97 @@
+/*
+ * File: Header.css
+ * Project: JL Movie
+ * File Created: Friday, 8th May 2020 8:19:10 pm
+ * Author: Joshu Lucas
+ * -----
+ * Last Modified: Sunday, 17th May 2020 1:36:10 pm
+ * Modified By: Joshu Lucas<adi.sreyaj@gmail.com>
+ * -----
+ */
+.header {
+  margin: 0 auto;
+  height: 80px;
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+  box-shadow: 0px 9px 8px -9px rgba(0, 0, 0, 0.07);
+}
+
+.header.sticky {
+  top: 0;
+  position: sticky;
+}
+
+.header-container {
+  height: 80px;
+  color: var(--primary);
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+
+.brand img {
+  height: 30px;
+}
+
+.menu ul {
+  padding: 0;
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+.menu ul li {
+  padding: 8px 16px;
+  cursor: pointer;
+  margin: 0 16px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: var(--primary);
+}
+.menu ul li a img {
+  width: 22px;
+}
+
+.mobile-menu-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+  nav.menu {
+    position: absolute;
+    top: 104px;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 90%;
+    background-color: #fff;
+    transform: translateY(-50px);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.2s cubic-bezier(0.66, 1.27, 0.9, 1.07) 0.3s;
+    box-shadow: 0 4.1px 10px rgba(0, 0, 0, 0.035),
+      0 33px 80px rgba(0, 0, 0, 0.07);
+  }
+
+  nav.menu ul {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav.menu ul li {
+    padding: 0;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+  .menu.enabled {
+    transform: translateY(0);
+    z-index: 999;
+    opacity: 1;
+  }
+}

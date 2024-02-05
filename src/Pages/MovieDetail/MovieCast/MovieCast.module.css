@@ -1,0 +1,19 @@
+/*
+ * File: MovieCast.module.css
+ * Project: JL Movie
+ * File Created: Saturday, 16th May 2020 9:16:28 pm
+ * Author: Joshu Lucas
+ * -----
+ * Last Modified: Sunday, 17th May 2020 10:23:06 am
+ * Modified By: Joshu Lucas<adi.sreyaj@gmail.com>
+ * -----
+ */
+
+.movie-cast-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  height: 320px;
+  overflow-x: scroll;
+  margin-bottom: 24px;
+}

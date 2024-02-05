@@ -1,0 +1,159 @@
+/*
+ * File: App.css
+ * Project: JL Movie
+ * File Created: Thursday, 7th May 2020 9:48:43 pm
+ * Author: Joshua Lucas
+ * -----
+ * Last Modified: Thursday, 21st May 2020 10:09:29 pm
+ * Modified By: Joshua Lucas<joshualucas0507@gmail.com>
+ * -----
+ */
+
+:root {
+  --primary: #120d31;
+  --secondary: #011627;
+  --accent: #659000;
+
+  /* Text Colors */
+  --text-light: #696969;
+
+  /* Screen Sizes */
+  --mobile: 599px;
+}
+
+button,
+.btn {
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+a.btn {
+  font-size: 0.8rem;
+}
+a.btn-primary {
+  text-decoration: none;
+}
+
+button.primary,
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+button.link {
+  color: var(--primary);
+  background: none;
+}
+
+button.icon-primary {
+  background: none;
+  padding: 0;
+  outline: none;
+}
+
+.heading {
+  margin: 12px 0;
+}
+
+.section-heading {
+  padding: 8px;
+}
+
+.box-layout {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/*-----------------------------------------
+ Shimmer Animation
+ -----------------------------------------*/
+.shimmer {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 250px;
+  display: inline-block;
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+/*-----------------------------------------
+ Custom Scrollbar Styles
+ -----------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgb(192, 192, 192);
+  box-shadow: inset 0 0 5px rgb(192, 192, 192);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* width */
+::scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgb(192, 192, 192);
+  box-shadow: inset 0 0 5px rgb(192, 192, 192);
+  border-radius: 10px;
+}
+
+/* Handle */
+::scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+@media screen and (max-width: 599px) {
+  button {
+    font-size: 1rem;
+  }
+}

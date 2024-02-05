@@ -1,0 +1,78 @@
+/*
+ * File: MovieDetail.module.css
+ * Project: JL Movie
+ * File Created: Saturday, 16th May 2020 6:38:15 pm
+ * Author: Joshu Lucas
+ * -----
+ * Last Modified: Sunday, 17th May 2020 10:54:41 am
+ * Modified By: Joshu Lucas<adi.sreyaj@gmail.com>
+ * -----
+ */
+
+.movie__backdrop {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.movie__content {
+  margin: -200px auto 0 auto;
+  padding: 24px;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.movie__meta {
+  padding-top: 200px;
+  margin-left: 2rem;
+}
+
+.movie__tagline {
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+.movie__overview {
+  line-height: 1.8;
+}
+
+.movie__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 350px;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.movie__cast {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.movie__keyword {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .movie__content {
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .movie__meta {
+    padding: 8px;
+    padding-top: 20px;
+    margin-left: 0;
+  }
+}
